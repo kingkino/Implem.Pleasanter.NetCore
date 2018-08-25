@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="@Implem.Pleasanter.Libraries.Server.Sessions.Language()">
+<head>
+    @using Implem.DefinitionAccessor
+
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv="content-language" content="ja" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="@Parameters.General.HtmlHeadKeywords">
+    <meta name="description" content="@Parameters.General.HtmlHeadDescription" />
+    <meta name="author" content="@Parameters.General.HtmlHeadAuther">
+    <meta name="viewport" content="@Parameters.General.HtmlHeadViewport" />
+    <link href="~/styles/plugins/Normalize.css" rel="stylesheet" />
+    <link href="~/styles/plugins/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/styles/plugins/jquery.datetimepicker.min.css" rel="stylesheet" />
+    <link href="~/styles/plugins/jquery.multiselect.css" rel="stylesheet" />
+    <link href="~/styles/plugins/jquery.multiselect.filter.css" rel="stylesheet" />
+
+    <link href="~/styles/site.css" rel="stylesheet" />
+
+    @Html.Raw(@Implem.Pleasanter.Libraries.HtmlParts.HtmlStyles.Get())
+    <title>@Parameters.General.HtmlTitle</title>
+</head>
+    <body style="visibility:hidden">
+        @RenderBody()
+    </body>
+</html>
